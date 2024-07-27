@@ -12,7 +12,7 @@
 // console.log("The End")
 
 // // call back function
-// // we use callback function to avoid callback hell or pyramid of dome and code becomes hard to handle 
+// // we use callback function to avoid callback hell or pyramid of doom and code becomes hard to handle 
 // const fn = () => { 
 //     console.log("Nothing")
 //  }
@@ -47,6 +47,14 @@ let prom1 = new Promise((resolve, reject)=>{
     }
 }) 
 
+// // only written for prom1: for catching the error
+// prom1.then((a) => { 
+//     console.log(a);
+//  }).catch((err) => { 
+//     console.log(err);
+//   })
+
+
 let prom2 = new Promise((resolve, reject)=>{
     let a = Math.random();
     if(a<0.5){
@@ -61,16 +69,12 @@ let prom2 = new Promise((resolve, reject)=>{
 }) 
         
 
-// // only written for prom1:
-// prom1.then((a) => { 
-//     console.log(a);
-//  }).catch((err) => { 
-//     console.log(err);
-//   })
-
-let p3 = Promise.all([prom1,prom2])
+let p3 = Promise.allSettled([prom1,prom2])
 p3.then((a) => { 
     console.log(a);
  }).catch((err) => { 
     console.log(err);
   })
+
+
+  // homework : try with at least 5 promises
