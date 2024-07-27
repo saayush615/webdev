@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transforms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 80vh;
+            width: 100vw;
+            border: 2px solid purple;
+            
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(55deg); */
+            transform-origin: 0 0;
+            /* o,o se rotate hoga  */
+            /* units of rotate -> 40deg,0.25turn(1turn=360deg), */
+            /* transform: rotateX(40deg); */
+            /* z-axis screen ke andar hai , screen x-y axis me hi hai  */
+            /* transform: scale(1.6); */
+            /* scale means utne times wo bara ho jayega */
+            /* transform: scaleX(1.6); */
+            /* transform: scale3d(); */
+            /* Skew means two side of paper pakar ke khich diya  */
+            /* transform: skew(34deg); */
+            /* transform: skewX(34deg); */
+            /* Note: skew does not apply in z-axis */
+            /* transform: translateX(30%) skewX(40deg); */
+            /* transform: translate(-100%) skewX(40deg) translateX(45%); */
+            /* to make box text at center we use the following three code  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- there are type Transforms 2-d and 3-d -->
+     <!-- see 20demo.html -->
+     <div class="container">
+        <div class="box">box</div>
+     </div>
+    
+</body>
+</html>

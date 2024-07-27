@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce animation</title>
+    <style>
+        body{
+            
+        }
+        .rec{
+            background-color: blue;
+            height: 60vh;
+            width: 60vw;
+            position: relative;
+        }
+        .ball{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: red;
+            border-radius: 56px;
+            height: 90px;
+            width: 90px;
+            animation: bouncex 3s linear infinite,
+                       bouncey 1s ease-out infinite alternate;
+
+        }
+        @keyframes bouncex {
+            from{
+                left: 0;
+
+            }
+            to{
+                left: 100%;
+            }
+        }
+        @keyframes bouncey {
+            from{
+                bottom: 0;
+
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- bounce ball on the blue rectangle ball=red color; -->
+     <div class="rec">
+        <div class="ball"></div>
+     </div>
+</body>
+</html>

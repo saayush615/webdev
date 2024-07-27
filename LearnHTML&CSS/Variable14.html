@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variable</title>
+    <style>
+        /* we declare the global variable with :root and can use be in code  */
+        :root{
+            --color:blue;
+            --seccolor:lightblue;
+            --defop: 0.8;
+            
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;
+
+        }
+        ul li {
+            opacity: var(--defop);
+            list-style: none;
+            padding: 34px;
+        }
+        /* down there is a example of local variable we can declare it and use in the same block only */
+        ul li:first-child{
+            --color:pink;
+            background-color: var(--color,orange);
+            /* find the variable --color in local and global if not found then usse orange as a background-color */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolore officia cum ab eius tempore quo adipisci impedit. Non temporibus a perspiciatis at. Accusantium pariatur modi cum laboriosam! Iure quo odio accusamus aperiam nemo magni neque nostrum, doloribus quaerat? Sequi accusantium voluptate placeat labore sunt.
+    </div>
+    
+</body>
+</html>

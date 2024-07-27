@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css animations</title>
+    <style>
+        .container{
+            background-color: rgb(65, 113, 113);
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            background-color: aqua;
+            width: 34px;
+            height: 45px;
+            /* animation-name: harryAni;
+            name of amimation 
+            animation-duration: 3s;
+            for how much duration does animatioin will work 
+           animation-iteration-count: 3;
+           how much time animetion will iterate 1s 2s ...0r infinity 
+           animation-timing-function: cubic-bezier(.17,.84,.44,1);
+           animation-delay: 1s;
+           duration to start a function 
+           animation-direction:alternate-reverse ;
+           animation-play-state: paused; */
+           animation: harryAni 3s ease-out 1s 3 alternate-reverse backwards,
+                      harry2 3s ease-in-out 3s;
+           /* animation: name duration timing-function delay iteration-count direction fill-mode; */ 
+           /* fill mode forward and backword try and see ,default is none */
+        }
+        @Keyframes harryAni{
+            from{
+                /* animation kaha se start hua  */
+                background-color: red;
+            }
+            to{
+                transform: translateX(1000px);
+                /* animation kaha tak chale  */
+                background-color: yellow;
+            }
+        }
+        @keyframes harry2 {
+            0%{
+                transform: rotate(100deg);
+            }        
+            20%{transform: rotate(200deg);}
+            50%{transform: rotate(220deg);}
+            80%{transform: rotate(300deg);}
+            100%{transform: rotate(310deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css object-fit & object-cover </title>
+    <style>
+        .container{
+            height: 634px;
+            width: 688px;
+            border: 2px solid black;
+            background-color: azure;
+            background-image: url(/ssShot.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        img{
+            height: 488px;
+            width: 466px;
+            object-fit: cover;
+            /* cover = iss 488*466px given image box me aspect ratio bigad gya try to fit this image in 488*466px by maintaing its aspect ratio (croping) */
+            /* object-fit: contain; */
+            /* contain = my image should not be crop and its aspect ratio should be maintained and fit in 488*466 box (leaves some space in box) */
+            /* object-position: top right; */
+            /* 4 position hoti hai top right,bottom right,bottom left,top left. 
+            NOTE: and try the position center center 
+            position = if the object is cover then which portion  should be more priority and should be focus upon and should noot be cut  */
+            object-fit: fill;
+            /* fill is the default property in this image will be fill in the 488*466 box  */
+            object-position: 10px 20px;
+            /*NOTE: object fit cover karne ke bad object-position 50% 50% kar du toh center wala part dikahayega */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="/ssShot.png" alt="...."> -->
+    </div>
+</body>
+</html>

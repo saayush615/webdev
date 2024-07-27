@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css shadow and outline</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            /* shadow syntax :
+            box-shadow: h-offset v-offset blur spread color inset;
+            h&v-offset = determine shadow horizontal and vertical position
+            blur = the larger the volume the blurir the shadow 
+            spread = Expand or srink the shadow size
+            color = defines shadow color 
+            inset = makes the shadow inner */
+            box-shadow: 5px 5px 5px grey ;
+        }
+        /* outline syntax:
+        outline : width style color ;
+        width= sets the outline width
+        style = determine the style of the outline such as solid,dotted or dashed
+        color = set the of outline */
+        /* outline vs border in code with harry website 
+        outline space nii leti hai aur border space leta hai 
+        outlne ki height and width hho sakti hai par border ki nii ho sakti hai
+        border radius lag sakta hai par outline wahi follow karegi jo border ki radius hogi */
+        .text{
+            text-shadow: 5px 5px 5px black ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias quis aspernatur sit placeat eaque autem iure harum possimus, nostrum culpa esse odit tenetur eligendi necessitatibus debitis quae perspiciatis dolor dicta fugiat delectus!
+    </div>
+    
+</body>
+</html>

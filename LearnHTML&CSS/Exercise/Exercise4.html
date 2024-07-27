@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        :root{
+            --navcolor: rgb(0, 0, 0);
+            --licolor: rgb(138, 176, 194);
+            --litext:rgb(255, 0, 0);
+            --lihover : rgb(175, 204, 204);
+            
+
+        }
+        nav{
+            background-color: var(--navcolor);
+        }
+        nav ul li{
+            background-color: var(--licolor);
+            color: var(--litext);
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            list-style-position: inside;
+            list-style: none;
+            display: inline-block;
+            border-radius: 18px;
+            font-weight: bolder;
+            
+        }
+        a{
+            color: var(--litext);
+        }
+        li:hover{
+            background-color: var(--lihover);
+        }
+        li:active{
+            background-color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- design a nav bar.declare a global variable and according to that global variable the contrast of the nav bar will change -->
+     <nav>
+        <Ul>
+            <li><a>Home</a></li>
+            <li><a>contact</a></li>
+            <li><a>About</a></li>
+            <li><a>Help</a></li>
+        </Ul>
+     </nav>
+    
+</body>
+</html>

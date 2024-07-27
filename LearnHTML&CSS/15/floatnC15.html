@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float&Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+            /* display flow root se wo image,cards ke bahar jaa raha tha after flow-root wo cards ke andar aa jayega. which can be identified by black solid border */
+        }
+        .card{
+            border: 2px solid red;
+        }
+        img{
+            float: right;
+            /* bcoz of the float image will flow to right and allow the containt on the left side of the screen */
+        }
+
+        .card:nth-child(3){
+            /* .card aagar aapne parent ka 3rd hai toh ye lagega */
+            background-color: aqua;
+            clear: right;
+            /* bhai mereko apne right me kuch v nii chaiye aagar hai toh hatalo. meaning of clear right */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- .cards>.card*3  use this code to make below three div inside a div -->
+    <div class="cards">
+        <img src="/ssShot.png" alt="linkedin" width="230px">
+        <div class="card">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasiit. Modi exercitationem nesciunt tenetur reiciendis consequatur et optio illo non dolorum ipsum? Exercitationem vel alias nemo ex rerum illum natus repudiandae sed, dolore, modi, ullam dolor labore debitis. ipsum dolor sit amet consectetur adipisicing elit. A quia voluptatum velit id magnam sit natus dolores ratione deleniti aperiam laboriosam ad quis quod illum, maiores temporibus repellat, mollitia, officia odio iure vitae. Optio.
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto eius aspernatur labore, explicabo nihil tempora quae vel illo maxime voluptates impedit perferendis repellat necessitatibus eum. Nobis praesentium eveniet sit, labore cupiditate aperiam, modi doloremque delectus necessitatibus doloribus laboriosam sequi inventore error libero vero ducimus ex facere, adipisci quam provident rem totam! Voluptatibus rerum, odio minima sed corrupti consequatur, doloremque voluptatum commodi inventore amet sit qui adipisci assumenda quidem molestiae, praesentium molestias tempore voluptas deleniti explicabo eaque. Officiis officia vel facere excepturi iste quaerat ipsum natus nostrum amet, vitae quidem. Velit nihil, quam voluptas nam aut sunt unde rerum, esse ea pariatur quibusdam laudantium. Voluptatum dignissimos incidunt libero ullam est fuga consectetur amet dicta velit. Eum fuga ex neque possimus iste deleniti reprehenderit non, veritatis quae saepe. Vero exercitationem quisquam sit nisi, magnam cupiditate a veniam optio, dignissimos illum itaque inventore ea ipsa perferendis perspiciatis enim corporis omnis! Molestiae expedita ab id voluptatem eius reprehenderit, consequuntur, omnis consectetur ullam qui reiciendis velit amet officiis. Id aperiam iste cupiditate eligendi illo molestias quae, praesentium enim harum dolorum consequuntur eos mollitia porro assumenda earum culpa quos ex obcaecati molestiae veniam voluptatem deleniti quibusdam repellendus. Magnam aut, est dolorem, obcaecati natus reprehenderit rerum distinctio quas, neque non nihil. Sed, iste. Ab illum, rerum aliquid odit fugiat nam doloribus earum quaerat laboriosam enim ipsam quo veritatis cum placeat voluptas. Expedita rem, minima repellat repellendus omnis enim. Consequatur itaque qui, natus porro deleniti nostrum non odio in iste, earum quo. Sed nisi earum voluptas, praesentium a dicta! Delectus sapiente, eligendi nisi suscipit consequuntur excepturi obcaecati tenetur quos repellendus, alias, pariatur accusamus blanditiis? Incidunt similique dolorem odit. Deserunt soluta magni dolor iste, quia vitae veritatis expedita laborum adipisci ex nisi eaque tempora, rerum minima voluptatibus a? Iure aliquam fuga placeat nihil distinctio reprehenderit saepe tenetur! Natus repellendus, reprehenderit possimus provident alias nisi sapiente sequi aperiam mollitia? Totam, placeat. Reiciendis necessitatibus quisquam fuga nobis recusandae nihil temporibus rerum tempore illo maxime qui alias animi, dolor, hic dolorem, nemo delectus! Odio.</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

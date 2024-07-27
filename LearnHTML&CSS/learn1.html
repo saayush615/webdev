@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bookmark manager</title>
+</head>
+<body>
+    <p>I am a paragraph</p><!--block ele-->
+    <h1>My Bookmark</h1>
+    <h3>Google</h3>
+    <a href="https://www.google.com/" target="_blank">google</a><!--Inline element-->
+    <!-- target _blank means to open the link in new page -->
+    <h3>FB</h3>
+    <a href="www.facebook.com" >fb</a>
+    <h3>insta</h3>
+    <a href="https://www.instagram.com/" >insta</a>
+    <br>
+    <img height="200" width="300" src="/ssShot.png" alt="linkedin">
+    <!-- alt is the which will show up in the case of image is not able to showup -->
+    <ul type="disc">
+        <li>happy</li>
+        <li>sad</li>
+        <li>emotional</li>
+    </ul>
+    <table>
+        <tr>
+            <th>s.no</th>
+            <th>name</th>
+            <th>roll.no</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>shubham</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>aayush</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <!--get requst simple data send , post request for big data-->
+    <form action="post">
+        <div> <!--div is a block element-->
+            <label for="username">Enter your username
+            </label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" >
+        </div>
+        <!--type radio means male or female-->
+        <!--type checkbox-->
+        <div>
+            <label for="comment">Enter your comment</label>
+            <textarea id="comment" name="comment"rows="4" cols="50"></textarea><!--to not clear the box every time use label insted of simply writing -->
+        </div>
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="cheery">cheery</option>
+            </select>
+        </div>
+    </form>
+    <!-- id(unique identification) =adhar no. , it help in linkig too & classes= name,class,d.o.b-->
+    <div id ="firstdiv" class="red bg-yellow">First</div>
+    <!-- here two class is given red and bg-yellow  -->
+    <div id="seconddiv">Second</div>
+    <span class="red"></span>
+    <!-- span is a inline element -->
+    <!-- for commenting use ctrl+/ -->
+    <!-- to add vedio we just write video audio -->
+    <video src="/vedio/vdo.mp4" height="555" poster="/ssShot.png" controls></video>
+    <!-- Vedio attribute from code with harry like loop,control,autoplay -->
+    <!-- do same for audio  -->
+        <!-- With svg we can create high graphics vector images -->
+        <!-- get svg code from code with harry and practice -->
+        <!-- making svg in diffrent page we have to add name place attribute ,search from stackoverflow -->
+    <!-- IFRAMES -->
+    <iframe src="https://bit.ly/3zquqSu" width="200" height="120" frameborder="0" ></iframe>
+    <!-- You can embed youtube vedio using iframe too -->
+        <!-- segmenting tag are used to segment the webpage for better SEO Tags like - Header,footer,nav,aside,article bas samnjhneke lia hota hai -->
+    <!-- html entities -->
+    3>4
+    this is the code for paragraph &lt;p&gt;&lt;/p&gt; <!--used to show the tags-->
+    <pre>
+        3>4 
+        This is the code for paragraph <p></p>  <!--tags doesn't show up-->
+
+            uaiufiaus   di
+    </pre> <!--to make new line intact-->
+    copyright &copy; codewithHarry <br>
+    copyright &copy; &nbsp;&nbsp; &nbsp; codewithHarry<br>
+    <!-- quotation tag  -->
+    <blockquote cite="source-url">quotation is here</blockquote>
+    <!-- code tag -->
+    <!-- shift+tab for 1 indentation kam -->
+
+
+</body>
+</html>

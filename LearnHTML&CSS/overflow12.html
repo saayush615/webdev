@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow property</title>
+    <style>
+        .box{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            /* overflow: auto; */
+            /* overflow - auto means aagar ye overflow kar raha hai toh show the scroll  bar or if not overflow dont show the scrool bar; 
+            if we do overflow scroll then if every thing is fine then also it show the scroll bar*/
+            white-space: nowrap;
+            /* text-overflow: ellipsis; */
+            /* we get three dot bcoz of text overflow ellipses */
+            /* overflow-x: scroll;
+            overflow-y: hidden; */
+            overflow: auto hidden;
+            /* overflow: auto kar do x me aur hidden kar do y mai  */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a boy  and i am Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni dolore minus sed asperiores voluptas voluptates? Officiis, sapiente maxime. Pariatur ipsum explicabo voluptate commodi reprehenderit officiis adipisci quae accusamus, inventore exercitationem deleniti quidem totam, quam, aut nihil unde id illo accusantium ducimus animi eaque perspiciatis.
+
+    </div>
+</body>
+</html>

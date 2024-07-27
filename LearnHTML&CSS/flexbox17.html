@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            /* display flex helps to enable flexbox */
+            height: 80vh;
+            /* flexbox jaha se jaha flow kar raha hai wo 1.main axis hoga aur uske perpendicular wala 2.cross axis ho jayega */
+            justify-content: center;
+            /* main axis me center kar dega if 1.main axis row toh row me cneter karega if main axis is colomn then colomn me center karega */
+            align-items: center;
+            /* flex-direction: column; */
+            /* row ko colomn me change kar dega */
+            flex-wrap: wrap;
+            align-content: center;
+            /* isse content chipak jata hai center me  */
+            /* NOTE: There is no justify item in a flex box */
+            flex-flow: row wrap;
+            gap: 40px 10px;
+            /* 40= row , 10=col; */
+        }
+        .item{
+            /* flex-grow: 1; */
+            /* ye 1 item ki jagah leta hai  */
+            height: 92px;
+            width: 92px;
+            background-color: violet;
+            border: 2px solid black;
+        }
+        .item1{
+            /* flex-grow: 2; */
+            /* means ye item 2 ki jagah lega  */
+            /* ye jitni time likha hloga utni time jagah lega relaitvely */
+            flex-shrink: 2;
+
+        }
+        /* .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        } */
+        /* order kam pahle aata hai order , order jada baad me aata hai  */
+        /* default order 0 hota hai  */
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div> 
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7 grid</title>
+    <!-- design the body of ultra edit website using your css grid skills fully functional with the download link for mobile and deskstop -->
+    <style>
+        body{
+            font-family: 'Segoe UI';
+        }
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+            height: 96.8px ;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+            
+        }
+        nav ol {
+            display: flex;
+            gap: 34px;
+            
+            
+        }
+        nav ol li {
+            list-style: none;
+            font-family: Cambria, 'Cochin', Georgia, Times, serif;
+            cursor: pointer;
+            display: flex;
+            padding: 5px;
+        }
+        .heading1 h1{
+            font-size: 34px;
+        }
+        .ad button{
+            padding: 12px;
+            background-color: lightblue;
+            font-weight: bolder;
+            border-radius: 10px;
+        }
+        .ad button:hover{
+            background-color: rgb(106, 106, 204);
+        }
+        .ad{
+            height: 400px;
+            justify-content: center;
+            padding-top: 100px;
+        }
+        .heading1{
+            margin-left: 31vw;
+            padding: 25px;
+        }
+        .content{
+            margin-left: 25vw;
+            padding: 25px;
+            width: 716px;
+            text-align: center;
+        }
+        .button{
+            margin-left: 40vw;
+            padding: 5px;
+        }
+        .download{
+            width: 60vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: auto;
+            gap: 34px;
+        }
+        .box{
+            height: 147px;
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            grid-column: 1/4;
+        }
+        .box h4{
+            
+           font-size: 30px;
+
+        }
+        .box button {
+           padding: 10px;
+           border-radius: 7px;
+           background-color: rgb(77, 174, 77);
+           cursor: pointer;
+           margin-top: 20px;
+        }
+        .box button:hover{
+            background-color: rgb(77, 133, 77);
+        }
+        .extra{
+            height: 180px;
+        }
+        @media (max-width:700px) {
+            .download{
+                background-color: brown;
+                grid-template-columns: 1fr 0fr 0fr;
+                grid-template-rows: 10fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- logo link = https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp  -->
+     <!-- english link = https://www.ultraedit.com/downloads/ultraedit-download-thank-you/  -->
+      <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="Logo" height="56.13 px" width="175.15">
+            </div>
+            <nav>
+                <ol>
+                    <li>Product <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>Pricing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>Resource <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>About us <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>Securuty and comapliances</li>
+                </ol>
+            </nav>
+        </div>
+      </header>
+      <main>
+        <div class="ad">
+            <div class="heading1">
+                <h1>Download <strong>Ultraedit</strong> for Windows</h1>
+            </div>
+            <div class="content">
+                <h4>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</h4>
+            </div>
+            <div class="button">
+                <button>DOWNLOAD MAC OR LINUX VERSION</button>
+            </div>
+        </div>
+        <div class="download">
+            <div class="title">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="Logo" height="56.13 px" width="175.15">
+            </div>
+            <div class="box"><h4>English </h4><button>Download 64-bit</button></div>
+            <div class="box"><h4>German </h4><button>Download 64-bit</button></div>
+            <div class="box"><h4>Italian </h4><button>Download 64-bit</button></div>
+            <div class="box"><h4>Spanish </h4><button>Download 64-bit</button></div>
+            <div class="box"><h4>Frech </h4><button>Download 64-bit</button></div>
+            <div class="box"><h4>Brazilian </h4><button>Download 64-bit</button></div>
+            <div class="box"><h4>japanese </h4><button>Download 64-bit</button></div>
+            <div class="box"><h4>Korean </h4><button>Download 64-bit</button></div>
+            <div class="box"><h4>Chinese </h4><button>Download 64-bit</button></div>
+            <div class="box extra"><h4>Traditional Chinese </h4><button>Download 64-bit</button></div>
+        </div>
+      </main>
+
+</body>
+</html>

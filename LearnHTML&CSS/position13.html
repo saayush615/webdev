@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 280px;
+            width: 80vw;
+            margin: 3px;
+            padding: 3px;
+            border: 2px solid black;
+
+        }
+        /* by default the box will be static to move or do changes on it we have to change the position relative; */
+        .box1{
+            background-color:aqua ;
+            /* position: absolute; */
+            /* to put z-index we have to make position relative
+             */
+            /* z-index: 1; */
+
+            position: sticky;
+            top: 0px;
+            /* position sticky se box chipkjata hai like in the case of nav bar */
+            /* there is a diffrence in fixed and sticky . in fixed it is at same position in canvas throughout the time . in sticky it is at a given position and sticks to top when scrool down  */
+        }
+        /*
+        the relative will find its immdeate parent position if parent is absolute then it will move according to its parent but if parent is not positioned then it will check the body if  body is also not positioned then it will be relative to html */
+        .box2{
+            background-color: azure;
+            /* position: relative;
+            top: 38px;
+            left: 114px; */
+            }
+        .box3{
+            background-color: antiquewhite;
+            /* position: fixed;
+            bottom: 0px;
+            left: 8vw; */
+        }
+        /* position fixed se given box same place fix kar deta even thought ham scrool kitna v kar le */
+        .box4{
+            background-color: purple;}
+        .parent{
+            margin: 43px;
+            padding: 34px;
+            border: 3px solid purple;
+            /* position: absolute; */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    <!-- Exception note: transform,filter,or perspective properties can also make an element appear as positioned -->
+    
+</body>
+</html>

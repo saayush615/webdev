@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-areas: "header header header"
+                                  "nav nav nav"
+                                  "side main main"
+                                  "footer footer footer";
+            row-gap: 10px;
+            column-gap: 34px;
+            
+        }
+        header{
+            grid-area: header;
+            height: 80px;
+        }
+        nav{
+            grid-area: nav;
+            height: 40px;
+        }
+        aside{
+            grid-area: side;
+            height: 520px;
+        }
+        main{
+            grid-area: main;
+            height: 520px;
+        }
+        footer{
+            grid-area: footer;
+            height: 60px;
+        }
+        header,main,nav,aside,footer{
+            border: 2px solid red;  
+        }
+    </style>
+</head>
+<body>
+     <header></header>
+     <nav></nav>
+     <aside></aside>
+     <main></main>
+     <footer></footer>
+</body>
+</html>

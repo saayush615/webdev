@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid red;
+            display: inline-block;
+            padding: 45px;
+            /* width: 344px; */
+            /* block ko inline banane ke top se na hi padding lagegi na hi margin jab tak humlog display inline-block na kare */
+            margin: 34px;
+        }
+        .box1{
+            /* display: none ; space and box dono gayab */
+            /* visibility: hidden; */
+            /* box gayab par space intact rahegi */
+        }
+    </style>
+</head>
+<body>
+    <!-- div is block element and span is a inline element -->
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">
+        I am 2nd box
+    </div>
+    <div>also a nice box</div>
+    <!-- span is inlie element -->
+    <span>I am a good </span>
+    <span>Boy</span>
+</body>
+</html>

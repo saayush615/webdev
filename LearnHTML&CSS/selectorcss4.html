@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* Element selector */
+        /* div{
+            background-color: red;
+        } */
+        /* class selector */
+        .red{
+            background-color: red;
+
+        }
+        /* Id selector */
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        div > p {
+            color: blue;
+            background-color: brown;
+            /* child selector is available to the immeddiate child */
+        }
+        
+        /* desendent selector; */
+        div p {
+            color:blue;
+            background-color: black;
+            /* div ke andar jitne v p unsab ko */
+        }
+        /* desendent selector is down so it is over-powering child selector */
+        
+        /* Universal selector */
+        *{
+            margin:0;
+            Padding:0;
+        }
+        /* Pseudo selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a div.
+        <p>i am p in a div . i am a child selector.</p>
+    </div>
+    <div id="green">
+        i am not red background red div 
+        <article>
+            <p>i am p in a div . i am a child selector.</p> 
+            <!-- child is nnot applicable bcoz div>artile>p  -->
+        </article>
+    </div>
+    <a href="http://www.google.com">GO TO GOOGLE</a>
+</body>
+</html>

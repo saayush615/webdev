@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 120px 100px;
+            /* It will make two colomn one of 120px & 100px */
+            grid-template-rows: 100px [t]100px 100px;
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+        
+        .item4{
+            /* row no. start from up to down 
+            col no. start from left to right  */
+            grid-row: 1/t;
+            grid-column: 1/2;
+            /* want item 4 to come in the place of item1 */
+            /* 1/2 means from position 1 to position 2 aa jaye  */
+            /* 1/2 = 1/t */
+        }
+        /* to overlap 1 and 4 */
+        .item1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+            /* want item 1 to be in the place of item1 */
+            /* 1/2 means from position 1 to position 2 aa jaye  */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- css grid used to make layout in css  -->
+     <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+     </div>
+    
+</body>
+</html>

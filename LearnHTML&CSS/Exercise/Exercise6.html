@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* header{
+            
+            height: 96.8px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        .container{
+           
+            height: 96.8px ;
+            width: 1220px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        .logo{
+        }
+        nav ol li{
+            padding: 30px;
+            list-style: none;
+            display: inline;
+        } */
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+            height: 96.8px ;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+            
+        }
+        nav ol {
+            display: flex;
+            gap: 34px;
+            
+            
+        }
+        nav ol li {
+            list-style: none;
+            font-family: Cambria, 'Cochin', Georgia, Times, serif;
+            cursor: pointer;
+            display: flex;
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- logo link = https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp  -->
+     <!-- english link = https://www.ultraedit.com/downloads/ultraedit-download-thank-you/  -->
+      <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="Logo" height="56.13 px" width="175.15">
+            </div>
+            <nav>
+                <ol>
+                    <li>Product <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>Pricing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>Resource <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>About us <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                    <li>Securuty and comapliances</li>
+                </ol>
+            </nav>
+        </div>
+      </header>
+</body>
+</html>
