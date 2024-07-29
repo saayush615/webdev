@@ -43,7 +43,7 @@ let prom1 = new Promise((resolve, reject)=>{
         setTimeout(() => {
             console.log('Yes I am done ');
             resolve("Harry")
-        }, 3000);
+        }, 5000);
     }
 }) 
 
@@ -64,7 +64,7 @@ let prom2 = new Promise((resolve, reject)=>{
         setTimeout(() => {
             console.log('Yes I am done 2 ');
             resolve("Harry 2")
-        }, 1000);
+        }, 5000);
     }
 }) 
         

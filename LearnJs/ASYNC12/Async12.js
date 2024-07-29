@@ -1,4 +1,5 @@
 /* settle means resolve or reject 
+
 resolve means promise has settled successfully 
 reject means promise has not setteled successfully
 
