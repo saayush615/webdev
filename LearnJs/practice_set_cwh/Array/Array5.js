@@ -37,3 +37,44 @@ console.log(arr)
 // }
 
 // question 1:
+
+let number = [1,2,3,4,5,6,50]
+// let a = prompt("Enter a number to add to array")
+// number.push(parseInt(a))
+// console.log(number);
+
+// question 2   *dont run this
+// let a;
+// do {
+//     a = prompt("Enter a no.")
+//     number.push(parseInt(a))
+// } while (a != 0);
+// console.log(number)
+
+// question 3
+//  let divi = (num) => { 
+//     if(num % 10 == 0){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+//   }
+//   console.log(number.filter(divi));
+  
+// question 4
+
+// let a = number.map((value) => { 
+//     return value**2 ;
+//  })
+// console.log(a);
+
+// question 5
+// let mul =number.reduce((n1,n2) => { 
+//     return n1*n2;
+//  })
+//  console.log(mul);
+ 
+
+
+

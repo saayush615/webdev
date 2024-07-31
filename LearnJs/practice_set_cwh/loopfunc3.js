@@ -25,51 +25,28 @@
 //     i++;
 // }
 
-// question 1(good) + 2
-// let obj = {
-//     "harry" : 98,
-//     "rohan" : 70,
-//     "aakash" : 7
+// question 1(good)
+let obj  = {
+    "Harry" : 98,
+    "rohan" : 70,
+    "aakash" : 7
+}
+// for (let i = 0; i< Object.keys(obj).length; i++ ){
+//     console.log(Object.keys(obj)[i] +" "+ obj[Object.keys(obj)[i]]);
 // }
 
-// let key = Object.keys(obj);
-// for (let i = 0; i < key.length; i++) {
-//     console.log(obj[key[i]]);
+
+// question 2
+// for( Element in obj){
+//     console.log(Element)
+//     console.log(obj[Element])
 // }
 
-// for (const key in obj) {
-//         const element = obj[key];
-//         console.log(element);
+// question 3
+// let val = 000
+// if(val == 000){
+//     console.log("you got it");
 // }
-
-// question 3;  created input using chatgpt
-// const readline = require('readline');
-
-// // Create an interface for reading input
-// const rl = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-// });
-
-// // Ask a question to the user
-// rl.question('Please enter your Password: ', (pass) => {
-//     if (pass == 981727) {
-//         console.log("your password is correct")
-        
-//     }
-//     else{
-//         console.log("Try again!!")
-//     }
-    
-//     // Close the interface
-//     rl.close();
-// });
-
-// question 4
-// function mean(num1, num2 , num3 , num4 , num5) {
-//     return (num1+num2+num3+num4+num5) / 5 ;
+// else{
+//     console.log("try again");
 // }
-
-// console.log(mean(5,44,6,9,10))
-
-

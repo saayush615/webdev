@@ -5,6 +5,7 @@ let arr = [1,2,3,4,5,7]
 // console.log(arr[0])
 // console.log(typeof arr)
 
+// Arrays are mutable
 // arr[0] = 5666;
 // console.log(arr)
 
