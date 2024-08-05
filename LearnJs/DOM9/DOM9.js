@@ -15,7 +15,7 @@ console.log("Harry")
 // for selecting all element having class box we use:
 // console.log(document.querySelectorAll(".box"))
 // to make this aaccess each element we use loop
-// document.querySelectorAll(".box").forEach(e => {
+// document.querySelectorAll(".box").forEach((e) => {
 //     e.style.backgroundColor = "green" ;
 // })
 
