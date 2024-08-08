@@ -53,11 +53,11 @@
 
 
 // promise.js 
-// we use promise for parellel execution . example (if we have given a cloth to stich and caake to make and samosa to make for tommrows birthday event it does not make sense that first we complete one tak and move to other we all the task to complete parellely)
+// we use promise for parellel execution . example (if we have given a cloth to stich and caake to make and samosa to make for tommrows birthday event it does not make sense that first we complete one task and move to other we can complete all the task parellely)
 
 console.log('This is promise ');
 
-// the promise will be either by resolved  or by rejected . like we ordered paratha from zomato either we can recive it (resolved) or we cannot get but we are informed (rejected). or if no answer the promise is still pending. 
+// the promise will be either resolved  or rejected . like we ordered paratha from zomato either we can recive it (resolved) or we cannot get but we are informed (rejected). or if no answer the promise is still pending. 
 
 // normally we donot do console.log on promise we do that on .then or .catch
 // normally the string we wite in resolve goes to then that will printed there, and the string value of rejected goes to error to show the error
@@ -77,7 +77,7 @@ let prom1 = new Promise((resolve, reject)=>{
 console.log(prom1);
 
 
-// // only written for prom1: .then what to do after a promise execution and .catch is used to show error if the promise is rejected ( both helps to notify the subscriber if resolved then see .then if rejected see .catch)
+// // only written for prom1: .then -> what to do after a promise execution and .catch -> is used to show error if the promise is rejected ( both helps to notify the subscriber if resolved then see .then if rejected see .catch)
 // prom1.then((a) => { 
 //     console.log(a);
 //  }).catch((err) => { 

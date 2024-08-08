@@ -35,7 +35,7 @@ let p3 = new Promise((resolve, reject) => {
 // promise_all.then((value) => { 
 //     console.log(value);
 //  })
- // promise.all chalaya aur ek va promise reject hue toh promise .all nii chalega
+ // promise.all chalaya aur ek v promise reject hue toh promise .all nii chalega
 
 // 2. promise.allSettled -> gives array of values of promises even though 1 promise is rejected
 //  let promise_all = Promise.allSettled([p1,p2,p3])
@@ -49,7 +49,7 @@ let p3 = new Promise((resolve, reject) => {
 //    console.log(value);
 // })
 
-// 4. promise.any -> thino me se jo jaldi ho jaye wo select ho jaye but wo agar error ho toh 2nd fastest select ho jaye (like 1 is 11 sec 2 reject the value at 2 sec but it will show 3 which has 3sec time to show)
+// 4. promise.any -> thino me se jo jaldi ho jaye wo select ho jaye but wo agar error ho toh 2nd fastest select ho jaye (like 1 is 11 sec, 2 reject the value at 2 sec but it will show 3 which has 3sec time to show)
 // let promise_all = Promise.any([p1,p2,p3])
 // promise_all.then((value) => { 
 //    console.log(value);
