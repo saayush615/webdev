@@ -79,8 +79,9 @@
 //         alert( this.name +" form is cancelled for train number " + this.trainnumber)
 //     }
 // }
-// // create a form for harry & fill the form with harry details
+// // // create a form for harry & fill the form with harry details
 // let harryform= new Railwayform("Harry",145316)
+// // as soon as we create an object the constructor is called 
 
 // // create a form for rohan & fill the form with rohan details
 // let rohanform = new Railwayform("Rohan",122420)

@@ -1,38 +1,40 @@
-// async function sleep(){
-//     return new Promise((resolve,reject) => { 
+// #86 :IIFE
+
+// let a = () => {
+//     return new Promise((resolve , reject) => { 
 //         setTimeout(() => { 
-//             resolve(45)
-//          },1000)
-//      })
+//             resolve(456)
+//         },4000)
+//     })
 // }
- 
-// iife 
-(async function main(){
-    // let a = await sleep()
-    // console.log(a)
-    // let b = await sleep()
-    // console.log(b)
 
-    // // destructuring
-    // let [x,y,...rest] = [1,5,7,8,9,10]
-    // console.log(x,y,rest)
+// // IIFE : not creating a seprate function and call it
+// (async() => { 
+//     let b = await a()
+//     console.log(b);
+//     let c = await a()
+//     console.log(c);
+//     let d = await a()
+//     console.log(d);
+//  })()
 
-    let obj = {
-        a : 1,
-        b: 2,
-        c: 3
-    }
+//  #87 : Destructuring
 
-    let{a,b} = obj
-    console.log(a,b)
+// here a=3 and b=5 ....
+// let arr = [3,5,8,9,12,14]
+// let [a,b,c,d] = arr
+// console.log(a,b,c,d);
 
-    let arr = [1,4,6]
-    console.log(arr[0]+arr[1]+arr[2]) // == 
-    console.log(sum(arr[0],arr[1],arr[2])) // == 
-    console.log(sum(...arr))
-})()
+// let arr = [3,5,8,9,12,14]
+// let [a,b,c,d, ...rest] = arr
+// console.log(a,b,c,d,rest);
+// console.log(a,b,c,d, ...rest);
 
-function sum(a,b,c){
-    return a+b+c
-}
+
+let arr = [3,5,8,9,12,14]
+let [a, , ,...rest] = arr
+console.log(a,rest);
+
+
+
 
