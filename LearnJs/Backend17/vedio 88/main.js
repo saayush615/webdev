@@ -26,15 +26,15 @@ app.get('/blog', (req, res) => {
   })
 
   // :slug here is a parameter  & req.param is an object
-app.get('/blog/:slug',(req,res) => {
-    // logic to fetch {slug} from db
+// app.get('/blog/:slug',(req,res) => {
+//     // logic to fetch {slug} from db
 
-    // for url = http://localhost:3000/blog/intro-to-js?mode=dark&region=in
-    console.log(req.params) // will output { slug: 'intro-to-js' }
-    console.log(req.query) // will output { mode: 'dark', region: 'in' }
+//     // for url = http://localhost:3000/blog/intro-to-js?mode=dark&region=in
+//     console.log(req.params) // will output { slug: 'intro-to-js' }
+//     console.log(req.query) // will output { mode: 'dark', region: 'in' }
 
-    res.send(`hello ${req.params.slug}`)
-})
+//     res.send(`hello ${req.params.slug}`)
+// })
 
 // app.get('/blog/:slug/:second',(req,res) => {
 //   // logic to fetch {slug} from db

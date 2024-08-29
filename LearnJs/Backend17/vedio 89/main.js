@@ -1,4 +1,10 @@
 const express = require('express')
+
+// As your application grows, managing all your routes in a single file (like app.js) becomes difficult. Routers allow you to organize routes into separate files, making the code more modular and easier to manage.
+// Example:
+// Routes related to users can be in a userRoutes.js file.
+// Routes related to products can be in a productRoutes.js file.
+
 const blog = require('./routes/blog')
 const shop = require('./routes/shop')
 
