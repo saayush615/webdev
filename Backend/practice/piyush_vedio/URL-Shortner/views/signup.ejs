@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Signup</h1>
+    <form action="/user" method="post">
+        <label>Full name</label>
+        <input type="text" required name="name"> <!--The required attribute ensures that the user cannot leave the "Full name" field empty.-->
+        <label>Email</label>
+        <input type="text" required name="email"><!--The name attribute specifies the key for the data submitted in the form.-->
+        <label>Password</label>
+        <input type="text" required name="password">
+        <!--This data can then be accessed on the server-side (e.g., in Express.js) using "req.body.name", "req.body.email", and "req.body.password".-->
+
+        <button type="submit">Sign up</button>
+    </form>
+</body>
+</html>

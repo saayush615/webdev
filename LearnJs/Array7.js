@@ -1,4 +1,4 @@
-let arr = [1,2,3,4,5,7]
+let arr = [1,100,2,3,57,4,5,7]
 
 // console.log(arr);
 // console.log(arr.length)
@@ -31,19 +31,28 @@ let arr = [1,2,3,4,5,7]
 // arr.unshift("aa")
 // console.log(arr)
 
-// delete arr[7]
+// delete arr[1]
 // console.log(arr)
 
 // let a2 = [2,3,5]
 // let a3 = ["Aayush",5 , "ee"]
 // console.log(arr.concat(a2,a3))
+// console.log(arr) // the arr doesnot change due to concat opration
+
+// console.log(arr.sort((a, b) => a - b))
 // console.log(arr)
 
-// arr.splice(1,3)
+// arr.splice(1,3) // position 1 ke baad 3 element remove karo 
 // console.log(arr)
 
-// arr.splice(1,3,222,333)
+// arr.splice(1,3,222,333) // position 1 ke bad 3 element remove karo aur uss position pe 222,333 add karo 
 // console.log(arr)
+
+// arr.slice(2); // it doesnot slice from arr
+// console.log(arr);
+// console.log(arr.slice(2)); // slice out all the element from 0,2 excluding 2
+// console.log(arr.slice(1,3)); // slice and give the arr of 1,3 exluding 3;
+
 
 // for (let i = 0; i < arr.length; i++) {
 //     const element = arr[i];

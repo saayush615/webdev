@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing post request</title>
+</head>
+<body>
+    <h1>This is my page file</h1>
+    <script>
+        // made this to test post request
+        // best way to test post request is to postman
+        async function testPost(){
+            let a = await fetch("/", {method: "PUT"})
+            let b = await a.text();
+            console.log(b);
+        }
+        testPost()
+    </script>
+</body>
+</html>

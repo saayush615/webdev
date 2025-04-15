@@ -56,7 +56,7 @@
 
         document.querySelector(".child").addEventListener("click", (e) => {
             e.stopPropagation()
-            // to stop bubbling
+            // to stop bubbling (event bubling)
             alert("Child was clidcked")
         })
         document.querySelector(".childContainer").addEventListener("click", (e) => {
@@ -68,14 +68,14 @@
             alert("container was clidcked")
         })
 
-        // setInterval ek hi chij ko bar bar repat karyega;
+        // setInterval (repeat the given action in the given interval of time);
         // setInterval(() => {
         //     document.querySelector(".childContainer").style.background = getRandomColor();
         // }, 1000);
         // // 1000 means 1 sec;
 
 
-        // setTimeout ek hi chij ko ek bar karyega;
+        // setTimeout (do the given action once in the given interval of time);
         setTimeout(() =>{
             document.querySelector(".childContainer").style.background =getRandomColor();
         },1000);  

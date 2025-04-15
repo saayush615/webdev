@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Sizing Unit</title>
+    <style>
+
+        /* https://www.freecodecamp.org/news/css-unit-guide/ */
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            /* this is very important it cover whole page box-sizing: border-box ; */
+            box-sizing: border-box;
+            /* width: 2048px; */
+            /* pixel is not much reponsive. so we use diffrent units  */
+            width: 80vw;
+            /* 100 vw means full screen size leta hai.  */
+            /* vw means veiw port width it is for reponsive website 
+             */
+             margin: auto;
+             /* margin auto se ye center aaya hai . 
+             only when it is a block level element*/
+            border: 2px solid black;
+            background-color: aquamarine;
+        }
+        .container{
+            /* this is very important it cover whole page box-sizing: border-box ; */
+            box-sizing: border-box;
+            /* width: 2048px; */
+            /* pixel is not much reponsive. so we use diffrent units  */
+            width: 80vw;
+            /* 100 vw means 100% of my veiw port.  */
+            /* vw means veiw port width it is for reponsive website 
+             */
+             margin: 23px auto;
+             /* margin auto se ye center aaya hai . 
+             only when it is a block level element*/
+            border: 2px solid black;
+            /* height: 80vw; */
+            min-height: 80vh;
+            font-size: 16px;
+            background-color: aquamarine;
+        }
+        .container p {
+            /* font-size: 2em; */
+            /* this means that the font size is 2* of the size it will be getting i.e 16*2=32px  */
+            /* and the default value of font is 16;  */
+            font-size: 2rem;
+            /*rem means font size 2* of root value ho jayega ho jayegi like html; 12*2=24*/
+            /* width: 50%; means parent ki weight ki 50% */
+
+        }
+        .mycont {
+            box-sizing: border-box;
+            margin: auto;
+            background-color: red;
+            color: blue;
+            font-size: 22px;
+            width: 80vw;
+            /* here vmin and vh will be same bcoz min is height in the desktop and in mobile vmin will be vw */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a solid box
+
+    </div>
+    <div class="container">
+        I am a container
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, non. Assumenda illum quas corporis voluptatem dolore odio totam reiciendis, ut in doloribus eius maiores suscipit asperiores eum exercitationem corrupti rerum libero ipsum, non veniam? Labore vero eaque sequi non asperiores. Nesciunt maxime eius nemo omnis, quasi eveniet dolore. Asperiores quidem nam culpa eligendi ab tempora dolores nemo ratione sint harum hic consequuntur quibusdam explicabo, cupiditate inventore alias veniam labore laudantium. Voluptatibus, aque eligendi ab ipsam ducimus. Voluptatibus eum corrupti veniam numquam doloremque culpa accusamus omnis officia maxime?
+        </p>
+    </div>
+    <div class="mycont">
+        I am cont container
+    </div>
+</body>
+</html>

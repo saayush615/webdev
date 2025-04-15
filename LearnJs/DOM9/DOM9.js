@@ -1,6 +1,6 @@
 console.log("Harry")
 
-// let boxes = document.getElementsByClassName("box")
+let boxes = document.getElementsByClassName("box")
 // console.log(boxes)
 
 // boxes[2].style.backgroundColor = "red" ;
@@ -14,7 +14,7 @@ console.log("Harry")
 
 // for selecting all element having class box we use:
 // console.log(document.querySelectorAll(".box"))
-// to make this aaccess each element we use loop
+// // to make this aaccess each element we use loop
 // document.querySelectorAll(".box").forEach((e) => {
 //     e.style.backgroundColor = "green" ;
 // })
@@ -28,6 +28,6 @@ console.log("Harry")
 // console.log(e[4].matches("#red"));
 
 // closest = to look for the nearest ancestor that matches the given css selctor.
-// e[3].closest("#red") 
+// console.log(e[3].closest("#red"));
 
 // contains = 

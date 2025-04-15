@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    <!-- code by only being in html aapko css me jane ki jarurat nii h  -->
+    <!-- tailwind is just a node.js package -->
+
+     <!-- how to install tailwind ="npm install -D tailwindcss" -d bcoz it is installing as devdependencies . only used when devlopment . Jab aap production me aapni website deploy karoge toh overhead utna nii aayega  -->
+
+     <!-- how to initialize tailwindcss use => "npx tailwind init" -->
+
+     <nav class="bg-purple-700 text-white flex md:justify-between flex-col md:flex-row min-h-10 items-center">
+        <div class="logo mx-auto md:mx-0">
+            CodeWithHarry
+        </div>
+        <ul class="flex space-x-3 justify-center md:justify-normal">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+     </nav>
+
+     <main>
+        <div class="container bg-red-600 sm:bg-purple-700 md:bg-slate-500">
+            I am main
+        </div>
+
+     </main>
+
+     <footer>
+
+     </footer>
+</body>
+</html>

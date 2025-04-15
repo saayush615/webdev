@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity</title>
+    <!-- Cascade Algorithm -->
+     <style>
+        h1{
+            color: red;
+        }
+        .A{
+            color: blue;
+        }
+        
+        .C{
+            color: yellow;
+        }
+        .B{
+            color: green;
+        }
+        /* this is an attribute selector */
+        [data-x=a]{
+            background-color: red;
+        }
+        
+
+        /* Specificity order */
+        /* inline style > Id selector > class selector or attribute selector > Element selector > Universal selector */
+
+     </style>
+</head>
+<body>
+    <h1 style="color: black;" class="A B C" data-x="a">Aayush singh</h1>
+    <!-- To calculate the Specificity assign a value to each part:
+    1.Universal selector = 0;
+    2. Element selector = 1;
+    3. class selector or attribute selector= 10;
+    4. Id selector= 100
+    5. Inline selector = 1000; 
+    To  break the tie we see kon sa niche hai
+    NOTE:- IN THE CASE OF MULTIPLE SELECTIN LIKE IF WE USE h1.A { color : maroon } THE SPECIFICITY IS 1+10=11 . SO IT HAS HIGHEST SPECIFICITY. AND THE COLOR WILL BE MAROON-->
+
+    <!-- HOMEWORK -->
+     <!-- specificity of a.harryclass.rohan-class[href]:hover{} -->
+      <!-- 1+10+10+10(attribute selector)+10(pseudo class)=41 -->
+
+</body>
+</html>

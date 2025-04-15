@@ -57,7 +57,7 @@ let p3 = new Promise((resolve, reject) => {
 
 // 5. promise.resolve & reject
 // let promise_all = Promise.resolve(6)
-let promise_all = Promise.reject(new Error("Hey"))
-promise_all.then((value) => { 
-   console.log(value);
-})
+// let promise_all = Promise.reject(new Error("Hey"))
+// promise_all.then((value) => { 
+//    console.log(value);
+// })

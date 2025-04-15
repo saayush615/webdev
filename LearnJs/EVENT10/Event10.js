@@ -19,12 +19,12 @@ button.addEventListener("contextmenu",()=>{
 
 
 // 2.KeyboardEvents
-// document.addEventListener("keydown",(e)=>{
-//     console.log(e)
-// })
-// document.addEventListener("keydown",(e)=>{
-//     console.log(e.key,e.keyCode)
-// })
+document.addEventListener("keydown",(e)=>{
+    console.log(e)
+})
+document.addEventListener("keydown",(e)=>{
+    console.log(e.key,e.keyCode)
+})
 
 // event bubling 
 // .........

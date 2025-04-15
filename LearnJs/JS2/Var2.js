@@ -21,7 +21,7 @@ console.log(typeof a, typeof b, typeof c )
 console.log(a);  //the answer will be 6
 
 let x = "harry bhai";
-let y = 22;
+let y = 21 ;
 let z = 3.55;
 let p = true;
 let q = undefined;
@@ -30,6 +30,7 @@ console.log(x,y,z,p,q,w)
 console.log( typeof x, typeof y, typeof z, typeof p, typeof q, typeof w)
 // type of null is object . why ? . see the stackoverflow answer. interveiw question
 
+// object in js
 let o = {
     "name" : "Harry" ,
     "job id" : 23828,
@@ -41,3 +42,7 @@ o.salary = "100crores";
 console.log(o);
 o.salary = "500croroes";
 console.log(o);
+
+//ternary oprator
+let k = (y == 21)?"yes":"no" ;
+console.log(k);
