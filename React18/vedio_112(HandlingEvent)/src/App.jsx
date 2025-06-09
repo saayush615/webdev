@@ -19,6 +19,16 @@ function App() {
    const handleChange = (e) => { 
     // setname(e.target.value)
     setForm({...form,[e.target.name]:e.target.value})
+    // e.target.value contains whatever the user types into the input
+
+    // Without square brackets (static property name)
+    // const obj = { email: "test@example.com" }
+
+    // // With square brackets (dynamic property name)
+    // const propertyName = "email"
+    // const obj = { [propertyName]: "test@example.com" }
+    
+    // // Both create: { email: "test@example.com" }
     console.log(form)
     }
   return (
