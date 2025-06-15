@@ -1,11 +1,17 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 
 const User = () => {
-    const {username} = useParams()
+    const {username} = useParams();
+    const navigate = useNavigate();
+
+    const changeName = (name) => { 
+      navigate(`/user/${name}`)
+     }
   return (
     <div>
       I am user my name is : {username}
+      <button onClick={() => changeName('kaayush')}>Change name</button>
     </div>
   )
 }
