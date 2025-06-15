@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     {/* see the harry code for without context(in public folder) and with context Api . this code is of context api (prop drilling is done in without context api) */}
-    <counterContext.Provider value={count}>
+    <counterContext.Provider value={{count, setCount}}>
     <Navbar/>
     {/* prop drilling = <Navbar count={count}/> = to send the count state to the Navbar.jsx */}
       <div>
