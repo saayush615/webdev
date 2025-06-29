@@ -5,7 +5,7 @@ const fs = require("fs")  // it is fs module
 
 // console.log(fs)
 
-console.log("starting")
+// console.log("starting")
 // fs.writeFileSync("harry.txt", "Harry is a good boy") // this write an blocking code, jabtak ye execute nii hoga tabtak niche wala nii chalega
 
 // fs.writeFile("harry2.txt", "Harry is a good boy2", () => { 
