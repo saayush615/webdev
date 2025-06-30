@@ -14,6 +14,9 @@ const port = 3000
 //isse public wala file serve hoga which we are using for testing
 app.use(express.static("public")) // app.use hum jab v likh rahe h tab hum ek middleware ka istamal kar rahe hai
 
+// - If you visit http://localhost:3000/mypage.html, your mypage.html will be served.
+// -  If you visit http://localhost:3000/, Express looks for public/index.html (not mypage.html). If it doesn't exist, your route handler for / is used.
+
 app.use('/blog',blog)  // handle express router to make diffrent js file for diffrent routes
 app.use('/shop',shop)  // express router
 
